@@ -17,6 +17,7 @@ function ChangeColorOnClick(a) {
     document.querySelector(".track-prev").id = 'track-inactive';
     document.querySelector(".track-2").id = 'track-inactive';
     document.querySelector(".tracker-container1-h1").innerHTML = "01 Брифинг";
+    document.querySelector(".tracker-container-middle-h1").innerHTML = "Слушаем ваши требования, уточняем условия, изучаем конкурентов, договариваемся о цене и сроках";
   }
   if(a==2)
   {
