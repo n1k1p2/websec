@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="preload" href="../src/fonts/Lack.woff2" as="font" type="font/woff2" crossorigin>            
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -27,8 +28,32 @@
     <title>React App</title>
   </head>
   <body>
+    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      window.onscroll = function() {
+      scrollFunction()
+      }
+      function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").classList.add('navbar-container-scrolled');
+    document.getElementById("navbar").classList.remove('navbar-container');
+    document.getElementById("logo").classList.add('navbar-logo-scrolled');
+    document.getElementById("logo").classList.remove('navbar-logo');
+  } else {
+    document.getElementById("navbar").classList.add('navbar-container');
+    document.getElementById("navbar").classList.remove('navbar-container-scrolled');
+    document.getElementById("logo").classList.add('navbar-logo');
+    document.getElementById("logo").classList.remove('navbar-logo-scrolled');
+  }
+}
+    </script>
+    <script>
+      
+    </script>
+    
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
