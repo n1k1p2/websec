@@ -34,7 +34,15 @@ function Navbar() {
     duration={500}
 >
                 <div className='btn-1'><h1>Портфолио</h1></div></Link>
-                <div className='btn-1'><h1>Трекинг</h1></div>
+                <Link
+    activeClass="active"
+    to="tracker-content"
+    spy={true}
+    smooth={true}
+    offset={-50}
+    duration={500}
+>
+                <div className='btn-1'><h1>Трекинг</h1></div></Link>
                 <Link
     activeClass="active"
     to="pricelist-container"
