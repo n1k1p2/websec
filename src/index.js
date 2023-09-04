@@ -4,11 +4,16 @@ import './index.css';
 import App from './App';
 import {createBrowserRouter, Navigate, RouterProvider,} from "react-router-dom";
 import Main from "./routes/main";
+import Aboutus from './routes/aboutus';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Navigate to="/home"/>,
     errorElement: <Main/>,
+  },
+  {
+    path: "/about",
+    element: <Aboutus/>,
   },
   
   

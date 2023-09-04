@@ -144,12 +144,12 @@
 .active {
     color: #FFE100;
     letter-spacing: 24.12px;
+    transition: all 0.2s ease;
     
 }
 .navbar-container-btns h1:hover {
     color: #FFE100;
-    letter-spacing: 10px;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 .navbar-logo {
     width: 80px;

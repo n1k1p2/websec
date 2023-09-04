@@ -5,7 +5,12 @@ import vk from '../imgs/VK.png';
 import tg from '../imgs/TG.png';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useState } from 'react';
+import {useNavigate} from "react-router-dom";
 function Navbar() {
+    const navigate = useNavigate();
+    const navigatetoMain = () => {
+        navigate('/home');
+    }
   return (
     <div className='navbar-container' id='navbar'>
         <div className='navbar-containers'>
@@ -24,7 +29,7 @@ function Navbar() {
     offset={-120}
     duration={500}
 >
-                <div className='btn-1'><h1>Главная</h1></div></Link>
+                <div className='btn-1' onClick={navigatetoMain}><h1>Главная</h1></div></Link>
                 <Link
     activeClass="active"
     to="clients-container"
@@ -36,15 +41,6 @@ function Navbar() {
                 <div className='btn-1'><h1>Портфолио</h1></div></Link>
                 <Link
     activeClass="active"
-    to="tracker-content"
-    spy={true}
-    smooth={true}
-    offset={-50}
-    duration={500}
->
-                <div className='btn-1'><h1>Трекинг</h1></div></Link>
-                <Link
-    activeClass="active"
     to="pricelist-container"
     spy={true}
     smooth={true}
@@ -52,6 +48,15 @@ function Navbar() {
     duration={500}
 >
                 <div className='btn-1'><h1>Прайслист</h1></div></Link>
+                <Link
+    activeClass="active"
+    to="tracker-content"
+    spy={true}
+    smooth={true}
+    offset={-50}
+    duration={500}
+>
+                <div className='btn-1'><h1>Трекинг</h1></div></Link>
             </div>
         </div>
     </div>
