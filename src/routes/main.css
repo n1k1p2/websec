@@ -63,7 +63,7 @@
     width: 100%;
     margin-left: 0;
     height: 90vh;
-    margin-top: 60px;
+    margin-top: 120px;
     background: linear-gradient(90deg, #3F51B1 0%, #5A55AE 13.00%, #7B5FAC 25%, #8F6AAE 38.00%, #A86AA4 50%, #CC6B8E 62.00%, #F18271 75%, #F3A469 87.00%, #F7C978 100%);
     overflow-x: hidden;
 }
