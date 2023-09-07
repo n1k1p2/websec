@@ -16,8 +16,10 @@ function MNavbar() {
     }
     return (
         <div className='mobile-navbar-container'>
+            <img className='logo-mobile' src={logo}></img>
+            <img className='logo-mobile' id='vk-mobile' src={vk}></img>
+            <img className='tg-mobile' src={tg}></img>
             <input id="burger" type="checkbox" />
-
                 <label for="burger">
                     <span></span>
                     <span></span>

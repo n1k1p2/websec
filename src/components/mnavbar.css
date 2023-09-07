@@ -67,8 +67,8 @@
   .mobile-navbar-container input ~ nav > ul {
     text-align: center;
     position: absolute;
-    top: 35%;
-    left: 20%;
+    top: 20%;
+    left: 10%;
     right: 20%;
   }
   .mobile-navbar-container input ~ nav > ul > li {
@@ -86,7 +86,7 @@
     padding: 30px;
   }
   .mobile-navbar-container input:checked ~ nav {
-    height: 100%;
+    height: 40%;
     transition-delay: 0s;
   }
   .mobile-navbar-container input:checked ~ nav > ul > li {
@@ -95,4 +95,20 @@
   }
 ul {
     list-style-type: none;
+}
+.logo-mobile {
+  z-index: 9999999;
+  height: 60px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+.tg-mobile {
+  z-index: 9999999;
+  height: 38px;
+  margin-top: 33px;
+  margin-left: 25px;
+
+}
+#vk-mobile {
+  margin-left: 45px;
 }

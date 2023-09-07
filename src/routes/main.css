@@ -448,7 +448,7 @@ html, body {
 .tracker-container1 {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 35%;
     border: 1px solid rgba(0, 0, 0, 0.10);
 }
 .tracker-container1-h1 {
@@ -952,7 +952,7 @@ input:hover {
         display: flex !important;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 830px) {
     .content-container2 img {
         display: none;
     }
@@ -1049,7 +1049,7 @@ input:hover {
         margin-bottom: 30px;
     }
     .tracker-container1 {
-        width: 40%;
+        width: 43%;
     }
     .tracker-container2 {
         width: 50%;
@@ -1083,26 +1083,35 @@ input:hover {
     }
 }
 @media screen and (max-width: 480px) {
+    .content-container {
+        height: 796px;
+    }
     .content-header h1 {
-        font-size: 32px;
+        font-size: 36px;
     }
     .content-description1 span {
-        font-size: 24px;
+        font-size: 28px;
     }
     .content-description1 h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
     .content-description2 span {
-        font-size: 24px;
+        font-size: 28px;
     }
     .content-description2 h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
     .clietns-header-h1 h1 {
         font-size: 36px;
     }
     .swiper-scrllbar {
         display: none;
+    }
+    .point-1 {
+        display: none;
+    }
+    .track-1 {
+        justify-content: flex-end;
     }
     .scrllbar-trace {
         display: none;
@@ -1126,6 +1135,10 @@ input:hover {
         margin-right: 10px;
     }
     .point-1 {
+        margin-left: 10px;
+    }
+    .tracker-button {
+        width: 59%;
         margin-left: 10px;
     }
 }
@@ -1159,6 +1172,9 @@ input:hover {
 @media screen and (max-width: 375px) {
     .content-header h1 {
         font-size: 24px;
+    }
+    .content-header {
+        text-align: center;
     }
     .content-description1 span {
         font-size: 18px;
@@ -1209,4 +1225,19 @@ input:hover {
         font-size: 20px;
         width: 80%;
     }
+    .tracker-header h1 {
+        font-size: 24px;
+    }
+    .tracker-header span {
+        font-size: 24px;
+    }
+    .content-container {
+        height: 80vh;
+    }
+    .content-button {
+        margin-top: 80px;
+    }
+}
+.swiper-pagination-bullet-active {
+    background: #FFE100 !important;
 }
